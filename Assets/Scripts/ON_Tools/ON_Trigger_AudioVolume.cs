@@ -49,6 +49,7 @@ namespace ON{
 		void Animate(float t){
 			foreach(AudioSource aud in audi)
 				aud.volume = Mathf.Lerp (minVolume, maxVolume, t);
+			Debug.Log("ON_Trigger_Audio");
 		}
 	}
 }

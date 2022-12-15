@@ -2,22 +2,13 @@
     "name": "PlayerControls",
     "maps": [
         {
-            "name": "Land",
-            "id": "191dc669-9c29-418e-8b08-fd102067a388",
+            "name": "Player",
+            "id": "69bb809c-c831-45b1-8896-02d3f89fda9c",
             "actions": [
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "14251830-b6c6-4909-acac-19802099c0eb",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "42e62175-6dbe-42e7-8707-a3f42fe77b6d",
+                    "id": "0511b429-cb45-4ab5-81bd-1c6db1feedb2",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -26,19 +17,8 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "07196d0b-14d4-4bc4-a8ed-71110db1b6e0",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "WASD",
-                    "id": "90518eca-31d1-4890-a0a7-9e03b402a4d1",
+                    "id": "5aba2037-98c8-4fef-a3d0-be6b83717ead",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -49,7 +29,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "8392d258-91a7-4a42-88b4-de342c185a69",
+                    "id": "62e8832f-f1b6-4ce7-8322-c3c18f1c78fe",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -60,7 +40,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "39549542-f7c7-458b-8d76-b9d05377b2cb",
+                    "id": "738c6dcb-6556-44bd-9b7f-9f98ee59f74c",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -71,8 +51,8 @@
                 },
                 {
                     "name": "left",
-                    "id": "2a6ef74d-84ed-4c1a-b9cf-d0b46c33531d",
-                    "path": "<SwitchProControllerHID>/buttonEast",
+                    "id": "690aada0-93e8-4ae3-8af0-289dac383658",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -82,7 +62,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "e5bdea23-e4aa-48eb-b7c6-02f0b80c8333",
+                    "id": "f5fc3a4c-0252-4314-9062-8bcfdb8fbbf4",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",

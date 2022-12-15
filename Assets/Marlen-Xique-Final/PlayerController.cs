@@ -4,34 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private PlayerControls playerControls;
-
-    private void Awake()
-    {
-        playerControls = new PlayerControls();
-
-    }
-
-    private void OnEnable()
-    {
-        playerControls.Enable();
-    }
-    private void OnDisable()
-    {
-        playerControls.Disable();
-    }
+    // Start is called before the first frame update
     void Start()
     {
-
+        
     }
-    private void Update()
-    {
-        playerControls.Land.Move.ReadValue<Vector2>();
-        Debug.Log("move");
-        //playerControls.Land.Jump.ReadValue<float>();
-        //if (playerControls.Land.Jump.ReadValue<float>() == 1)
-            if (playerControls.Land.Jump.triggered)
-                Debug.Log("Jump");
 
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

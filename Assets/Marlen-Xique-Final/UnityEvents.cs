@@ -6,18 +6,18 @@ using System;
 public class UnityEvents : MonoBehaviour
 {
     public static UnityEvents current;
-    void Start()
+    private void Awake()
     {
         current = this;
         
     }
 
-    public event Action onDoorwayTriggerEnter;
-    public void DoortriggerEnter() 
+    public event Action OnDoorwayTriggerEnter;
+    public void DoorwayTriggerEnter() 
     {
-        if(onDoorwayTriggerEnter != null)
+        if(OnDoorwayTriggerEnter != null)
         {
-            onDoorwayTriggerEnter();
+            OnDoorwayTriggerEnter();
         }
     }
 }

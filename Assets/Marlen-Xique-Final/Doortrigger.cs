@@ -9,4 +9,9 @@ public class Doortrigger : MonoBehaviour
     {
         UnityEvents.current.DoorwayTriggerEnter ();
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        UnityEvents.current.DoorwayTriggerExit();
+    }
 }

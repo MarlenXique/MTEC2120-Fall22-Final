@@ -20,4 +20,16 @@ public class UnityEvents : MonoBehaviour
             OnDoorwayTriggerEnter();
         }
     }
+
+
+    public event Action OnDoorwayTriggerExit;
+    public void DoorwayTriggerExit()
+    {
+        if (OnDoorwayTriggerExit != null)
+        {
+            OnDoorwayTriggerExit();
+        }
+    }
+
+
 }

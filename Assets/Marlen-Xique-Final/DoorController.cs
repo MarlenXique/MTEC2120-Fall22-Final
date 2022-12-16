@@ -8,11 +8,19 @@ public class DoorController : MonoBehaviour
     private void Start()
     {
         UnityEvents.current.OnDoorwayTriggerEnter += OnDoorwayOpen;
-    }
-    private void OnDoorwayOpen()
-    {
-        LeanTween.moveLocalY(gameObject, 1.6f, 1f).setEaseOutQuad();
+        UnityEvents.current.OnDoorwayTriggerExit += OnDoorwayClose;
     }
 
-   
+    private void OnDoorwayClose()
+    {
+        LeanTween.moveLocalY(gameObject, 9f, 1f).setEaseInQuad();
+    }
+
+
+    private void OnDoorwayOpen()
+    {
+        LeanTween.moveLocalY(gameObject, 10f, 1f).setEaseOutQuad();
+    }
+
+
 }
